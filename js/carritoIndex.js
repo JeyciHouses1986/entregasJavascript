@@ -72,7 +72,7 @@ const recuperarCarrito = () => {
                                     <p class="productoEnCarrito">${producto.nombre}</p>
                                     <p class="productoEnCarrito">Precio: ${producto.precio}</p>
                                     <p id="cantidad${producto.id}" class="productoEnCarrito">Cantidad: ${producto.cant}</p>
-                                    <button id="eliminar${producto.id}" class="boton-eliminar"><img src="../icons/svg2/trash-can-solid.svg"/></button>
+                                    <button id="eliminar${producto.id}" class="boton-eliminar"><img src="icons/svg2/trash-can-solid.svg"/></button>
                                 `
                     contenedorCarrito.appendChild(div)
 
