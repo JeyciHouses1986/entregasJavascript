@@ -1,9 +1,6 @@
 
 import { accesorios } from './stock.js';
 import { carritoIndex } from './carritoIndex.js';
-//import {carritoTrash} from './carritoIndex.js';
-
-
 
 const retornoCardError = () => {
     return `<div class="center white-text"> 
@@ -143,5 +140,3 @@ const toastCarritoAcces = (mensaje) => {
         color: '#ffffff'
     })
 }
-
-//ELIMINAR ACCESORIO DEL CARRITO

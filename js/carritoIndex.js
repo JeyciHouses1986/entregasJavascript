@@ -19,7 +19,7 @@ export const carritoIndex = (productoId) => {
                             <p class="productoEnCarrito">${producto.nombre}</p>
                             <p class="productoEnCarrito">Precio: ${producto.precio}</p>
                             <p id="cantidad${producto.id}" class="productoEnCarrito">Cantidad: ${producto.cant}</p>
-                            <button id="eliminar${producto.id}" class="boton-eliminar"><img src="../icons/svg2/trash-can-solid.svg"/></button>
+                            <button id="eliminar${producto.id}" class="boton-eliminar"><img src="icons/svg2/trash-can-solid.svg"/></button>
                           `
             contenedorCarrito.appendChild(div)
 
@@ -34,15 +34,6 @@ export const carritoIndex = (productoId) => {
     renderProductoCarrito()
 }
 
-
-//Eliminar item del carrito
-//     function eliminarDelCarrito (producto) {
-//     debugger;
-//     const productoAremover = document.getElementById(`eliminar${producto.id}`);
-//     productoAremover.remove();
-// }
-
-//este es el codigo que me pasaste para eliminar
 const eliminarDelCarrito = (productoEliminado) => {
     debugger
     console.log(carritoCompras);
