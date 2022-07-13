@@ -1,0 +1,56 @@
+[
+    {
+        "id": 1,
+        "nombre": "Toshiba Notebook 500GB HDD & 8GB RAM",
+        "precio": 250000,
+        "stars": 4,
+        "reviews": 34,
+        "img": "img/notebooks/note1.webp",
+        "cant": 1
+    },
+    {
+        "id": 2,
+        "nombre": "Toshiba Notebook 500GB HDD & 8GB RAM",
+        "precio": 250000,
+        "stars": 4,
+        "reviews": 34,
+        "img":"img/notebooks/note2.webp",
+        "cant": 1
+    },
+    {
+        "id": 3,
+        "nombre": "Toshiba Notebook 500GB HDD & 8GB RAM",
+        "precio": 250000,
+        "stars": 4,
+        "reviews": 34,
+        "img":"img/notebooks/note3.webp",
+        "cant": 1
+    },
+    {
+        "id": 4,
+        "nombre": "Toshiba Notebook 500GB HDD & 8GB RAM",
+        "precio": 250000,
+        "stars": 4,
+        "reviews": 34,
+        "img":"img/notebooks/note4.webp",
+        "cant": 1
+    },
+    {
+        "id": 5,
+        "nombre": "Toshiba Notebook 500GB HDD & 8GB RAM",
+        "precio": 250000,
+        "stars": 4,
+        "reviews": 34,
+        "img":"img/notebooks/note5.webp",
+        "cant": 1
+    },
+    {
+        "id": 6,
+        "nombre": "Toshiba Notebook 500GB HDD & 8GB RAM",
+        "precio": 250000,
+        "stars": 4,
+        "reviews": 34,
+        "img":"img/notebooks/note6.webp",
+        "cant": 1
+    }
+]

@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html>
+
+
+<head>
+    <title>Notex - Tu mejor consejo</title>
+
+    <!-- meta -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <!-- google font -->
+    <link rel='stylesheet' href='http://fonts.googleapis.com/css?family=Kreon:300,400,700'>
+
+    <!-- css -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/main.css">
+
+    <!-- js -->
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    <!-- js propios-->
+
+    <script defer src="js/variables.js"></script>
+    <script defer src="js/stock.js" type="module"></script>
+    <script defer src="js/app.js" type="module"></script>
+    <script defer src="js/contactForm.js" type="module"></script>
+    <script defer src="js/modal.js" type="module"></script>
+    <!-- Este va en el HTML del checkout -->
+    <!-- <script defer src="js/appCheckout.js" type="module"></script> -->
+
+
+</head>
+
+<body data-spy="scroll" data-target="#navbar" data-offset="120">
+    <div id="menu" class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <div class="container">
+            <div class="navbar-header visible-xs">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">
+                    <h2>NOTEX</h2>
+                </a>
+            </div><!-- navbar-header -->
+            <div id="navbar" class="navbar-collapse collapse">
+                <div class="hidden-xs" id="logo"><a href="#header">
+                        <img src="img/logo.png" alt="">
+                    </a></div>
+
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#facts">Historia</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
+                    <li><a href="#quienes">Nosotros</a></li>
+
+
+                    <li><a href="#notebooks">Notebooks</a></li>
+                    <li><a href="#accesorios">Accesorios</a></li>
+                    <li><a href="#" id="open"><i class="fa fa-shopping-cart"></i> Cart <span class="badge">3</span></a>
+                    </li>
+
+                    <!--fix for scroll spy active menu element-->
+                    <li style="display:none;"><a href="#header"></a></li>
+
+                </ul>
+            </div>
+            <!--/.navbar-collapse -->
+        </div><!-- container -->
+    </div><!-- menu -->
+    <!-- ------------------------- carrito de compras -  ------------------------------------------------ -->
+    <!-- ---------------------------- ---------------------------------------------------------------------------- -->
+    <div id="producto-contenedor">
+        <div class="modal-container" id="modal_container">
+            <div>
+            <div class="modal-carrito">
+                    <h3>Carrito</h3>
+                <button id="cerrar" class="boton-cerrar">Cerrar</button>        
+            </div>
+                <div id="carrito-contenedor"></div>               
+            </div>
+        </div>
+    </div>
+    <!-- -------------------------- /carrito de compras -  --------------------------------------- -->
+    <!-- ---------------------------- ---------------------------------------------------------------------------- -->
+
+    <div id="header">
+        <div class="bg-overlay"></div>
+        <div class="center text-center">
+            <div class="banner">
+                <h1 class="">Notex</h1>
+            </div>
+            <div class="subtitle">
+                <h3>TU MEJOR CONSEJO</h4>
+            </div>
+        </div>
+        <div class="bottom text-center">
+            <a id="scrollDownArrow" href="#"><i class="fa fa-chevron-down"></i></a>
+        </div>
+    </div>
+    <!-- /#header -->
+
+        <section class="ss-style-bottom"></section>
+    
+    
+    
+    <!-- #historia -->
+
+
+    <div id="facts" class="parallax parallax2">
+
+        <div class="container inner">
+            <h2 class="section-title text-center">Nuestra historia</h2>
+            <p class="lead main text-center">Una empresa creada por placer</p>
+            <div class="row text-center story">
+                <div class="col-sm-4">
+                    <div class="col-wrapper">
+                        <div class="icon-wrapper"> <i class="fa fa-anchor"></i> </div>
+                        <h3>2020</h3>
+                        <p>La pandemia nos enseño que en las difucultades y obstáculos hay oportunidades</p>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="col-wrapper">
+                        <div class="icon-wrapper"> <i class="fa  fa-diamond"></i> </div>
+                        <h3>Unidos por la pasión</h3>
+                        <p>Apasionados por la tecnología que día a día presenta nuevos desafíos</p>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="col-wrapper">
+                        <div class="icon-wrapper"> <i class="fa fa-book"></i> </div>
+                        <h3>Los consejos</h3>
+                        <p>Queremos hacerte sentir seguro al momento de comprar tu notebook, para que te lleves la mejor
+                            compra de acuerdo a tus necesidades</p>
+                    </div>
+                </div>
+            </div>
+            <!-- /.services -->
+        </div>
+        <!-- /.container -->
+    </div><!-- #logros -->
+
+
+
+
+    <div id="notebooks" class="light-wrapper">
+        <section class="ss-style-top"></section>
+        <div class="container inner">
+            <h2 class="section-title text-center">Catálogo de notebooks</h2>
+
+
+
+            <!-- NOTEBOOKS -->
+
+            <div class="container d-flex justify-content-center mt-50 mb-50" id="listadoNote">
+                <div class="listadoDeNote" id="container-notebooks">
+
+
+                    <!-- -------------------- ACA SE GENERAN LAS NOTEBOOKS POR API ------------------------- -->
+
+
+                </div>
+            </div>
+
+
+
+        </div>
+        <!-- /.container -->
+        <section class="ss-style-bottom"></section>
+    </div>
+    <!--/#notebooks-->
+
+
+<!-- ACCESORIOS -->
+
+    <div id="accesorios" class="parallax pricing">
+        <div class="container inner">
+
+            <h2 class="section-title text-center">Accesorios</h2>
+            <p class="lead main text-center">La mejor notebook con los mejores accesorios</p>
+
+            
+            <div class="containerAccesorios" id="container-accesorios">
+
+
+                <!-- =========== ACA SE CARGAN LOS ACCESORIOS POR JAVASCRIPT ============ -->
+
+
+            </div>
+
+            
+
+
+        </div>
+        <!-- /.container -->
+    </div><!-- /#accesorios -->
+
+
+
+
+    <div id="contacto" class="light-wrapper">
+        <section class="ss-style-top"></section>
+        <div class="container inner">
+            <h2 class="section-title text-center">Reservá una cita</h2>
+            <p class="lead main text-center">Podés comunicarte con nosotros para recibir asesoramiento personalizado
+                gratuito</p>
+            <div class="row">
+                <div class="col-md-6">
+                    <form class="form form-table" method="post" name="">
+                        <div class="form-group">
+                            <h4>Completá el formulario para que podamos comunicarnos (se requiere completar todos los
+                                campos)</h4>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-6 col-md-6 form-group">
+                                <input class="form-control hint" type="text" id="inputNombre" name="first_name"
+                                    placeholder="Nombres" required="">
+                            </div>
+                            <div class="col-lg-6 col-md-6 form-group">
+                                <input class="form-control hint" type="text" id="inputApellido" name="last_name"
+                                    placeholder="Apellido" required="">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-6 col-md-6 form-group">
+                                <input class="form-control hint" type="email" id="inputCorreo" name="email"
+                                    placeholder="email@dominio.com" required="">
+                            </div>
+                            <div class="col-lg-6 col-md-6 form-group">
+                                <input class="form-control hint" type="text" id="inputTelefono" name="phone"
+                                    placeholder="Teléfono" required="">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-6 col-md-6 form-group">
+                                <input class="form-control datepicker hasDatepicker hint" type="datetime-local"
+                                    id="reserv_date1" name="reserv_date" placeholder="Fecha y hora de contacto"
+                                    required="">
+                            </div>
+                            <div class="col-lg-6 col-md-6 form-group">
+                                <input class="form-control hint" type="text" id="numb_guests1" name="numb_guests"
+                                    placeholder="Producto de interés" required="">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-12 col-md-12">
+                                <p>Solicitamos se coloque una fecha y hora de contacto para poder comunicarnos
+                                    telefónicamente y poder brindarle el mejor asesoramiento sin entorpecer su rutina
+                                    diaria. De querer ser contactado inmediatamente, especifíquelo así.</p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-12 col-md-12">
+                                <input type="submit" class="btn btn-danger btn-lg" id="submit"></input>
+                            </div>
+                        </div>
+                    </form>
+                </div><!-- col-md-6 -->
+                <div class="col-md-5 col-md-offset-1">
+                    <h4>Nuestros horarios</h4>
+                    <p>Lunes a Sábados: 8:00 PM - 21:00 AM<br>Domingos: Solo consultas por Whatsapp</p>
+
+                    <h3><i class="fa fa-map-marker fa-fw"></i>Dirección</h3>
+                    <p>Avellaneda 321, Alta Córdoba, Córdoba Capital CP 5001 - Argentina</p>
+
+                    <h3><i class="fa fa-mobile fa-fw"></i>Contacto</h3>
+                    <p>Email: <a href="mailto:yourname@meatking.com">contacto@notex.com.ar</a></p>
+                    <p>Phone: (0351) 153-546565</p>
+
+                </div><!-- col-md-6 -->
+            </div>
+            <!-- /Consultas -->
+        </div>
+        <!-- /.container -->
+        <section class="ss-style-bottom"></section>
+    </div><!-- #Reservas -->
+
+
+
+    <div id="quienes" class="parallax pricing">
+        <div class="container inner">
+
+            <h2 class="section-title text-center">Quienes somos</h2>
+            <p class="lead main text-center">Un trío de locos apasionados por la tecnología!!</p>
+
+            <div class="row text-center chefs">
+                <div class="col-sm-4">
+                    <div class="col-wrapper">
+                        <div class="icon-wrapper">
+                            <img src="img/quienes/perso1.webp">
+                        </div>
+                        <h3>Javier Casas</h3>
+                        <p>Vivamus sagittis lacuson augue laoreet rutrum faucibus dolor auctor. Cras mattis consectetur
+                            purus sit amet fermentum ultricies vehicula.</p>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="col-wrapper">
+                        <div class="icon-wrapper">
+                            <img src="img/quienes/perso2.webp">
+                        </div>
+                        <h3>Diego Clapton</h3>
+                        <p>Nullam id dolor id nibh ultricies vehicula ut id elit. Cum sociis natoque penatibus et magnis
+                            dis parturient monte nascetur ultricies vehicula. </p>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="col-wrapper">
+                        <div class="icon-wrapper">
+                            <img src="img/quienes/perso3.webp">
+                        </div>
+                        <h3>Juan Montserrat</h3>
+                        <p>Curabitur blandit matti tempus porttitor. Donec id elit non mi porta ut gravida at eget
+                            metus. Consectetur adipiscing elit ultricies vehicula.</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <!-- /.container -->
+    </div><!-- /Quienes somos -->
+
+
+    <footer id="footer" class="dark-wrapper">
+        <section class="ss-style-top"></section>
+        <div class="container inner">
+            <div class="row">
+                <div class="col-sm-6">
+                    <h6></h6>&copy; Jeyci DebWeb</h6>
+                </div>
+                <div class="col-sm-6">
+                    <div class="social-bar">
+                        <a href="#" class="fa fa-instagram tooltipped" title=""></a>
+                        <a href="#" class="fa fa-youtube-square tooltipped" title=""></a>
+                        <a href="#" class="fa fa-facebook-square tooltipped" title=""></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- /.container -->
+    </footer>
+
+
+
+
+
+</body>
+
+</html>
