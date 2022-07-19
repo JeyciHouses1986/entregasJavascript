@@ -2,7 +2,7 @@ const volverAtras = () => {
     //debugger
     const botonVolver = document.querySelector(`#botonVolver`)
     botonVolver.addEventListener('click', () => {
-        //guardarDatosDeUsr()
+        guardarDatosDeUsr()
         })
 }
 
@@ -24,28 +24,28 @@ const finalizarCompra = () => {
 finalizarCompra()
 
 
-// function guardarDatosDeUsr() {
-//     const datosUsr = {
-//         nombre: inputNombre.value,
-//         apellido: inputApellido.value,
-//         correo: inputCorreo.value,
-//         telefono: inputTelefono.value
-//     }
-//     let str = JSON.stringify(datosUsr)
-//     localStorage.setItem("datosUsr", str)
-// }
+function guardarDatosDeUsr() {
+    const datosUsr = {
+        nombre: inputNombre.value,
+        apellido: inputApellido.value,
+        correo: inputCorreo.value,
+        telefono: inputTelefono.value
+    }
+    let str = JSON.stringify(datosUsr)
+    localStorage.setItem("datosUsr", str)
+}
 
-// function recuperoDatosDeUsr() {
-//     if (localStorage.getItem("datosUsr")) {
-//         const datosUsr = JSON.parse(localStorage.getItem("datosUsr"))
-//         inputNombre.value = datosUsr.nombre
-//         inputApellido.value = datosUsr.apellido
-//         inputTelefono.value = datosUsr.telefono
-//         inputCorreo.value = datosUsr.correo
-//     }
-// }
+function recuperoDatosDeUsr() {
+    if (localStorage.getItem("datosUsr")) {
+        const datosUsr = JSON.parse(localStorage.getItem("datosUsr"))
+        inputNombre.value = datosUsr.nombre
+        inputApellido.value = datosUsr.apellido
+        inputTelefono.value = datosUsr.telefono
+        inputCorreo.value = datosUsr.correo
+    }
+}
 
-// recuperoDatosDeUsr()
+recuperoDatosDeUsr()
 
 //Resaltar campos al completarlos
 const focoEnCampos = () => {
