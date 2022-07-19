@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <!-- meta -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout</title>
+
+    <!-- google font -->
+    <link rel='stylesheet' href='http://fonts.googleapis.com/css?family=Kreon:300,400,700'>
+
+    <!-- css -->
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/font-awesome.min.css">
+    <link rel="stylesheet" href="../css/main.css">
+
+    <!-- js Sweeeeet alert -->
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    <!-- js propios-->
+    <script defer src="../js/contactFormCheck.js" type="module"></script>
+    <script defer src="../js/appCheckout.js" type="module"></script>
+
+
+</head>
+
+<body data-spy="scroll" data-target="#navbar" data-offset="120">
+    <div id="menu" class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="../index.html">
+                    <h2>NOTEX</h2>
+                </a>
+            </div><!-- navbar-header -->
+            <div id="navbar" class="navbar-collapse collapse">
+                <div id="logo">
+                    <a href="../index.html"><img src="../img/logo.png" alt=""></a>
+                </div>
+                <!--fix for scroll spy active menu element-->
+
+                </ul>
+            </div>
+            <!--/.navbar-collapse -->
+        </div><!-- container -->
+    </div><!-- menu -->
+
+    <div id="contacto" class="light-wrapper">
+        <section class="ss-style-top"></section>
+        <div class="container inner">
+            <h2 class="section-title text-center">Finalizando compra</h2>
+            <p class="lead main text-center"></p>
+            <div class="row">
+
+                <!-- Aca recuperamos el carrito -->
+                <form class="form form-table" method="post" name="">
+                    <div class="form-group">
+                            <div id="producto-contenedor" class="col-lg-6 col-md-6 form-group">
+                                <div>
+                                    <h2>Carrito</h2>
+                                    <div id="carrito-contenedor"></div>
+                                    <div>
+                                        <button id="botonVolver" class="boton-carrito"><a href="../index.html">Volver</a></button>
+                                    </div>
+                                </div>
+                            </div>
+
+                    </div>
+                </form>
+
+                        <!-- Formulario para cerrar compra -->
+
+                        <div class="col-md-6">
+                            <form class="form form-table" method="post" name="">
+                                <div class="form-group">
+                                    <h2>Completá el formulario para que podamos comunicarnos (se requiere completar
+                                        todos los
+                                        campos)</h2>
+                                </div>
+                                <div class="row">
+                                    <div class="col-lg-6 col-md-6 form-group">
+                                        <input class="form-control hint" type="text" id="inputNombre" name="first_name"
+                                            placeholder="Nombres" required="">
+                                    </div>
+                                    <div class="col-lg-6 col-md-6 form-group">
+                                        <input class="form-control hint" type="text" id="inputApellido" name="last_name"
+                                            placeholder="Apellido" required="">
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-lg-6 col-md-6 form-group">
+                                        <input class="form-control hint" type="email" id="inputCorreo" name="email"
+                                            placeholder="email@dominio.com" required="">
+                                    </div>
+                                    <div class="col-lg-6 col-md-6 form-group">
+                                        <input class="form-control hint" type="text" id="inputTelefono" name="phone"
+                                            placeholder="Teléfono" required="">
+                                    </div>
+                                </div>
+                                <div class="row">
+                                </div>
+
+                                <div class="row">
+                                    <div class="col-lg-12 col-md-12">
+                                        <p>Al enviar el formulario de compra nos contactaremos de inmediato para acordar formas de pago, y envío. Es muy importante que verifique los datos cargados para que el contacto sea exitoso</p>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-lg-12 col-md-12">
+                                        <button type="submit" class="boton-carrito" id="botonFinalizar">Finalizar</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div><!-- col-md-6 -->
+                        <div class="col-md-5 col-md-offset-1">
+
+
+                        </div><!-- col-md-6 -->
+                    </div>
+            </div>
+            <!-- /.container -->
+        </div>
+
+
+        <footer id="footer" class="dark-wrapper">
+
+            <section class="ss-style-top"></section>
+            <div class="row">
+                <div class="col-md-3">
+                    <a class="nombreFooterr" href="https://github.com/JeyciHouses1986"
+                        target="_blank">@JeyciHouses1986</a>
+                </div><!-- col-md-6 -->
+
+                <div class="col-md-7">
+                    <h4>Nuestros horarios</h4>
+                    <p>Lunes a Sábados: 8:00 PM - 21:00 AM<br>Domingos: Solo consultas por Whatsapp</p>
+
+                    <h3><i class="fa fa-map-marker fa-fw"></i>Dirección</h3>
+                    <p>Avellaneda 321, Alta Córdoba, Córdoba Capital CP 5001 - Argentina</p>
+
+                    <h3><i class="fa fa-mobile fa-fw"></i>Contacto</h3>
+                    <p>Email: <a href="mailto:yourname@meatking.com">contacto@notex.com.ar</a></p>
+                    <p>Phone: (0351) 153-546565</p>
+                </div><!-- col-md-6 -->
+
+                <div class="col-md-12">
+                    <div class="social-bar">
+                        <a href="#" class="fa fa-instagram tooltipped" title=""></a>
+                        <a href="#" class="fa fa-youtube-square tooltipped" title=""></a>
+                        <a href="#" class="fa fa-facebook-square tooltipped" title=""></a>
+                    </div>
+
+                </div><!-- col-md-6 -->
+            </div>
+            <!-- /.container -->
+
+
+        </footer>
+
+
+
+
+
+</body>
+
+</html>

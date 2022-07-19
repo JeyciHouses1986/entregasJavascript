@@ -8,8 +8,7 @@
     <!-- meta -->
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <meta name="viewport"
-        content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
     <!-- google font -->
@@ -20,8 +19,12 @@
     <link rel="stylesheet" href="css/font-awesome.min.css">
     <link rel="stylesheet" href="css/main.css">
 
+
+
+
     <!-- js -->
     <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
 
     <!-- js propios-->
 
@@ -30,8 +33,7 @@
     <script defer src="js/app.js" type="module"></script>
     <script defer src="js/contactForm.js" type="module"></script>
     <script defer src="js/modal.js" type="module"></script>
-    <!-- Este va en el HTML del checkout -->
-    <!-- <script defer src="js/appCheckout.js" type="module"></script> -->
+
 
 
 </head>
@@ -46,10 +48,8 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="#">
-                    <h2>NOTEX</h2>
-                </a>
-            </div><!-- navbar-header -->
+                <a class="navbar-brand" href="#"><h2>NOTEX</h2></a>
+            </div> <!-- navbar-header -->
             <div id="navbar" class="navbar-collapse collapse">
                 <div class="hidden-xs" id="logo"><a href="#header">
                         <img src="img/logo.png" alt="">
@@ -74,16 +74,23 @@
             <!--/.navbar-collapse -->
         </div><!-- container -->
     </div><!-- menu -->
+
+
+
+
     <!-- ------------------------- carrito de compras -  ------------------------------------------------ -->
     <!-- ---------------------------- ---------------------------------------------------------------------------- -->
     <div id="producto-contenedor">
         <div class="modal-container" id="modal_container">
             <div>
-            <div class="modal-carrito">
+                <div class="modal-carrito">
                     <h3>Carrito</h3>
-                <button id="cerrar" class="boton-cerrar">Cerrar</button>        
-            </div>
-                <div id="carrito-contenedor"></div>               
+                    <div>
+                        <button id="cerrar" class="boton-carrito">Cerrar</button>
+                        <button id="comprar" class="boton-carrito"><a href="paginas/checkout.html">Comprar</a></button>
+                    </div>
+                </div>
+                <div id="carrito-contenedor"></div>
             </div>
         </div>
     </div>
@@ -106,10 +113,10 @@
     </div>
     <!-- /#header -->
 
-        <section class="ss-style-bottom"></section>
-    
-    
-    
+    <section class="ss-style-bottom"></section>
+
+
+
     <!-- #historia -->
 
 
@@ -178,7 +185,7 @@
     <!--/#notebooks-->
 
 
-<!-- ACCESORIOS -->
+    <!-- ACCESORIOS -->
 
     <div id="accesorios" class="parallax pricing">
         <div class="container inner">
@@ -186,7 +193,7 @@
             <h2 class="section-title text-center">Accesorios</h2>
             <p class="lead main text-center">La mejor notebook con los mejores accesorios</p>
 
-            
+
             <div class="containerAccesorios" id="container-accesorios">
 
 
@@ -195,7 +202,7 @@
 
             </div>
 
-            
+
 
 
         </div>
@@ -333,7 +340,8 @@
         <div class="container inner">
             <div class="row">
                 <div class="col-sm-6">
-                    <a class="nombreFooterr" href="https://github.com/JeyciHouses1986" target="_blank">@JeyciHouses1986</a>
+                    <a class="nombreFooterr" href="https://github.com/JeyciHouses1986"
+                        target="_blank">@JeyciHouses1986</a>
                 </div>
                 <div class="col-sm-6">
                     <div class="social-bar">
@@ -348,9 +356,5 @@
     </footer>
 
 
-
-
-
 </body>
-
 </html>

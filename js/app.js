@@ -136,7 +136,7 @@ const toastCarritoAcces = (mensaje) => {
         toast: true,
         timer: 4000,
         timerProgressBar: true,
-        background: 'darkred',
+        background: '#d87a2d',
         color: '#ffffff'
     })
 }

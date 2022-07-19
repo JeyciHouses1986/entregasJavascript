@@ -96,3 +96,4 @@ recuperarCarrito()
 // btnVer.addEventListener("click",()⇒>{
 //     location.href="checkout.html"
 // })
+export {carritoCompras};
