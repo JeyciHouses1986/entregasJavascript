@@ -3,6 +3,24 @@ const carritoCompras = [];
 
 //TOAST CON SWEET ALERT -----------------------------------
 
+const toastCarroVacio = (mensaje) => {
+    Swal.fire({
+        icon: 'warning',
+        position: 'center',
+        title: mensaje,
+        showConfirmButton: true,
+        timerProgressBar: true,
+        background: '#d87a2d',
+        color: '#ffffff', 
+    }).then(function() {
+        window.location.href = "../index.html";
+    })
+}
+
+
+
+
+
 const recuperarCarrito = () => {
     //debugger
     const contenedorCarrito = document.getElementById('carrito-contenedor')
@@ -22,6 +40,13 @@ const recuperarCarrito = () => {
         }
         )
     }
+    else
+    toastCarroVacio ("El carrito esta vacio")
+       
+
+
+
+
 }
 recuperarCarrito ()
 
